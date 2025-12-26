@@ -2,8 +2,7 @@
 A wide-range `Net 9.0` C# Utility Library combining all of my projects code
 
 ## Features
-- Serialization and Deserialization
-- JSON, XML, Binary
+- Serialization and Deserialization (JSON, XML, Binary)
 - File Management
 - Collections
 - Native Collections
@@ -46,8 +45,4 @@ using BenScr.Reflection;
 using BenScr.Text;
 using BenScr.Debugging;
 ```
-
-## Support
-[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/benscr)
-[![Linktree](https://img.shields.io/badge/Linktree-00C853?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/benscr)
 
