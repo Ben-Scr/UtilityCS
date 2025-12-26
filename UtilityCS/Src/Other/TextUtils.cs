@@ -63,5 +63,23 @@ namespace BenScr.Text
 
             return s.Distinct().Count();
         }
+
+        public static string ArrayToString<T>(T[] arr)
+        {
+            string text = "[";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == 0)
+                {
+                    text += arr[i];
+                }
+                else
+                {
+                    text += ", " + arr[i];
+                }
+            }
+
+            return text + "]";
+        }
     }
 }

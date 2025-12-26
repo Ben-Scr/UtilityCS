@@ -13,7 +13,7 @@ namespace BenScr.IO
         public static string MainPath = FileManager.FromLocalAppFolder("BenScr", "SaveManager");
 
         private static string CreatePathFromType<T>(string key, Extension extension = Extension.json)
-            => FileManager.CombinePathWithExtension(extension, MainPath, MainPath, typeof(T).Name, key);
+            => FileManager.CombinePathWithExtension(extension, MainPath, typeof(T).Name, key);
 
         public static string GetPathOfKey<T>(string key)
             => CreatePathFromType<T>(key);
@@ -40,7 +40,7 @@ namespace BenScr.IO
             string path = CreatePathFromType<T>(key);
 
             if (!File.Exists(path))
-                throw new FileNotFoundException($"File with key ({key}) at path ({path}) doesn't Exist");
+                throw new FileNotFoundException($"File with key \"{key}\" at path \"{path}\" doesn't exist!");
 
             File.Delete(path);
         }
