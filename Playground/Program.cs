@@ -132,10 +132,10 @@ public class Program
     {
         Console.WriteLine("-- Encryptor Preview --");
         string message = "Hello World!";
-        string encrypedMessage = Encryptor.String.Encrypt(message);
+       // string encrypedMessage = Encryptor.String.Encrypt(message);
         Console.WriteLine($"Original Message: \"{message}\"");
-        Console.WriteLine($"Encrypted Message: \"{encrypedMessage}\"");
-        Console.WriteLine($"Decrypted Message: \"{Encryptor.String.Decrypt(encrypedMessage)}\"");
+     //   Console.WriteLine($"Encrypted Message: \"{encrypedMessage}\"");
+      //  Console.WriteLine($"Decrypted Message: \"{Encryptor.String.Decrypt(encrypedMessage)}\"");
     }
 
     public static void MiniLinqPreview()
