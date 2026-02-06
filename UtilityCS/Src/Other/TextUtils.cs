@@ -51,6 +51,34 @@ namespace BenScr.Text
 
         public static int WordsCount(string s) => s.Split(' ').Length;
 
+
+        public static string WrapWith(string s, string beginMark, string endMark)
+        {
+            s.Insert(0, beginMark);
+            s += endMark;
+            return s;
+        }
+        public static string WrapWith(string s, string mark)
+        {
+            s.Insert(0, mark.ToString());
+            s += mark;
+            return s;
+        }
+
+        public static string WrapWith(string s, char beginMark, char endMark)
+        {
+            s.Insert(0, beginMark.ToString());
+            s += endMark;
+            return s;
+        }
+        public static string WrapWith(string s, char mark)
+        {
+            s.Insert(0, mark.ToString());
+            s += mark;
+            return s;
+        }
+
+
         public static string ToColoredString(string text, string hexColor) // Note: Only useable when rich text editing is beeing supported
         {
             return $"<color=#{hexColor}>{text}</color>";

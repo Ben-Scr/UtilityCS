@@ -35,5 +35,21 @@ namespace BenScr.Reflection
         {
             typeof(TSource).GetField(fieldName, BindingFlags)?.SetValue(obj, value);
         }
+
+        public static bool IsNumericType(Type type)
+        {
+            TypeCode typeCode = Type.GetTypeCode(type);
+            return typeCode == TypeCode.Byte
+                || typeCode == TypeCode.SByte
+                || typeCode == TypeCode.UInt16
+                || typeCode == TypeCode.UInt32
+                || typeCode == TypeCode.UInt64
+                || typeCode == TypeCode.Int16
+                || typeCode == TypeCode.Int32
+                || typeCode == TypeCode.Int64
+                || typeCode == TypeCode.Decimal
+                || typeCode == TypeCode.Double
+                || typeCode == TypeCode.Single;
+        }
     }
 }
