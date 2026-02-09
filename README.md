@@ -19,7 +19,7 @@ A wide-range `Net 9.0` C# Utility Library combining all of my projects code
 
 ### Option 1 - Clone the Repository
 1. Clone with  
-   `https://github.com/Ben-Scr/UtilityCS`
+   `git clone https://github.com/Ben-Scr/UtilityCS`
 2. Add `UtilityCS.csproj` to your project  
    **or** test the features directly in `UtilityPlayground.csproj`.
 
