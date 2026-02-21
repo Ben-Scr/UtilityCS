@@ -1,7 +1,7 @@
 # C# Utility Library
-A wide-range `Net 9.0` C# Utility Library combining all of my projects code
+A wide-range `.Net 9.0` C# Utility Library combining all of my libraries
 
-## Features
+## Usage
 - Serialization and Deserialization (JSON, XML, Binary)
 - File Management
 - Collections
@@ -13,7 +13,6 @@ A wide-range `Net 9.0` C# Utility Library combining all of my projects code
 - Mathematics
 - Logging
 - Mini LINQ
-- CMD Utils
 
 ## How to install
 
