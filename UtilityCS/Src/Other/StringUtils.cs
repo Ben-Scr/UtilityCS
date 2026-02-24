@@ -3,7 +3,7 @@ namespace BenScr.Text
 {
     public enum FilterOption { Digits, Letters, Alphanumeric };
 
-    public static class TextUtils
+    public static class StringUtils
     {
         public const string DIGITS = "0123456789";
         public const string LETTERS_UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -20,7 +20,7 @@ namespace BenScr.Text
         {
             return new string(input.Where(c => allowedChars.Contains(c)).ToArray());
         }
-        public static char[] GetFilter(FilterOption filterOption, bool useSpace = true)
+        public static char[] GetFilterCharset(FilterOption filterOption, bool useSpace = true)
         {
             string allowedChars = filterOption == FilterOption.Digits ? DIGITS : (filterOption == FilterOption.Letters ? LETTERS : (DIGITS + LETTERS));
             allowedChars += useSpace ? SPACE : "";
@@ -108,6 +108,14 @@ namespace BenScr.Text
             }
 
             return text + "]";
+        }
+
+        private static string Capitalize(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            return char.ToUpper(input[0]) + input.Substring(1).ToLower();
         }
     }
 }
