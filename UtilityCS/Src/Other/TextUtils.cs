@@ -3,7 +3,7 @@ namespace BenScr.Text
 {
     public enum FilterOption { Digits, Letters, Alphanumeric };
 
-    public static class StringUtils
+    public static class TextUtils
     {
         public const string DIGITS = "0123456789";
         public const string LETTERS_UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
