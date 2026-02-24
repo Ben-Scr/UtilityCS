@@ -134,7 +134,7 @@ public class Program
         string message = "Hello World!";
        // string encrypedMessage = Encryptor.String.Encrypt(message);
         Console.WriteLine($"Original Message: \"{message}\"");
-     //   Console.WriteLine($"Encrypted Message: \"{encrypedMessage}\"");
+      //   Console.WriteLine($"Encrypted Message: \"{encrypedMessage}\"");
       //  Console.WriteLine($"Decrypted Message: \"{Encryptor.String.Decrypt(encrypedMessage)}\"");
     }
 

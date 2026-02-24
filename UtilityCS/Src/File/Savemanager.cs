@@ -1,4 +1,4 @@
-﻿using BenScr.Serialization.Json;
+﻿using BenScr.Serializer;
 using System.Text.Json;
 
 namespace BenScr.IO
