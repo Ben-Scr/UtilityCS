@@ -1,7 +1,7 @@
 # C# Utility Library
-A wide-range `Net 9.0` C# Utility Library combining all of my projects code
+A wide-range `.Net 9.0` C# Utility Library combining all of my libraries
 
-## Features
+## Usage
 - Serialization and Deserialization (JSON, XML, Binary)
 - File Management
 - Collections
@@ -13,13 +13,12 @@ A wide-range `Net 9.0` C# Utility Library combining all of my projects code
 - Mathematics
 - Logging
 - Mini LINQ
-- CMD Utils
 
 ## How to install
 
 ### Option 1 - Clone the Repository
 1. Clone with  
-   `https://github.com/Ben-Scr/UtilityCS`
+   `git clone https://github.com/Ben-Scr/UtilityCS`
 2. Add `UtilityCS.csproj` to your project  
    **or** test the features directly in `UtilityPlayground.csproj`.
 
