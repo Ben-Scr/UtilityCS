@@ -110,7 +110,7 @@ namespace BenScr.Text
             return text + "]";
         }
 
-        private static string Capitalize(string input)
+        public static string Capitalize(string input)
         {
             if (string.IsNullOrEmpty(input))
                 return input;
